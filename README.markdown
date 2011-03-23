@@ -16,3 +16,7 @@ After cloning this repository, you can deploy with this:
 * `heroku config:add PRODUCT_NAME=<name of product>` _optional_
 * `heroku config:add FOOTER=<footer copy>` _optional_
 * `git push heroku master`
+
+## Preview
+
+!http://content.screencast.com/users/ianterrell/folders/Jing/media/e0f62aef-3290-4232-874a-c9e3d653a116/00000341.png!
