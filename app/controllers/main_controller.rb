@@ -21,7 +21,7 @@ protected
 
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      username == "samastaff" && password == "n@irobi"
+      username == "samastaff" && password == ENV['PASSWORD']
     end
   end
 end
