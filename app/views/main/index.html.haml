@@ -2,7 +2,12 @@
   %h1
     = release.name
     - if release.accepted_at
-      %span DONE
+      %span.done Done
+    - elsif release.deadline
+      - if release.deadline < Time.now
+        %span.overdue Overdue
+      - elsif release.deadline + @project.iteration_length.weeks < release.estimated_finish
+        %span.behind Behind Schedule
   %h2
     - if release.deadline
       = "Due #{release.deadline.to_s(:default)} &mdash; ".html_safe

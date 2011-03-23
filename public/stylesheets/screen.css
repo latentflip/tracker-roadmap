@@ -46,15 +46,32 @@ body {
 /* line 37, sass/screen.sass */
 #content h1 span {
   font-size: 12px;
+  text-transform: uppercase;
+  padding: 2px;
+  position: relative;
+  top: -4px;
+}
+/* line 43, sass/screen.sass */
+#content h1 span.done {
   background-color: yellow;
 }
-/* line 40, sass/screen.sass */
+/* line 45, sass/screen.sass */
+#content h1 span.overdue {
+  background-color: red;
+  color: white;
+}
+/* line 48, sass/screen.sass */
+#content h1 span.behind {
+  background-color: orange;
+  color: white;
+}
+/* line 51, sass/screen.sass */
 #content h2 {
   color: #cccccc;
   margin-top: 0px;
 }
 
-/* line 44, sass/screen.sass */
+/* line 55, sass/screen.sass */
 #footer {
   margin-top: 40px;
   color: #aaaaaa;

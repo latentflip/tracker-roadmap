@@ -36,7 +36,18 @@ body
     margin-bottom: 0px
     span
       font-size: 12px
-      background-color: yellow
+      text-transform: uppercase
+      padding: 2px
+      position: relative
+      top: -4px
+      &.done
+        background-color: yellow
+      &.overdue
+        background-color: red
+        color: white
+      &.behind
+        background-color: orange
+        color: white
   h2
     color: #ccc
     margin-top: 0px
