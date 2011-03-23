@@ -21,4 +21,4 @@
       %h1= "#{ENV["PRODUCT_NAME"] || "Product"} Roadmap"
     #content
       = yield
-    #footer= ENV["FOOTER"] || "Confidential"
+    #footer= (ENV["FOOTER"] || "Confidential").html_safe
