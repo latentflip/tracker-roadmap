@@ -20,3 +20,7 @@ After cloning this repository, you can deploy with this:
 ## Preview
 
 ![](https://github.com/Samasource/tracker-roadmap/raw/master/screenshot.png)
+
+## We're hiring!
+
+We're hiring designers and engineers!  Read our job descriptions here:  http://www.samasource.org/about/samacareers
