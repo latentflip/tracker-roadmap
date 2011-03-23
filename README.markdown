@@ -1,6 +1,6 @@
 ## Tracker Roadmap
 
-Tracker Roadmap is a small utility application that turns your "Pivotal Tracker":http://www.pivotaltracker.com release stories into a high level roadmap.
+Tracker Roadmap is a small utility application that turns your Pivotal Tracker release stories into a high level roadmap.
 
 ### Installation
 
