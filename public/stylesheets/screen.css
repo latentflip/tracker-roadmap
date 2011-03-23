@@ -44,12 +44,17 @@ body {
   margin-bottom: 0px;
 }
 /* line 37, sass/screen.sass */
+#content h1 span {
+  font-size: 12px;
+  background-color: yellow;
+}
+/* line 40, sass/screen.sass */
 #content h2 {
   color: #cccccc;
   margin-top: 0px;
 }
 
-/* line 41, sass/screen.sass */
+/* line 44, sass/screen.sass */
 #footer {
   margin-top: 40px;
   color: #aaaaaa;
