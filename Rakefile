@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Roadmap::Application.load_tasks
+TrackerRoadmap::Application.load_tasks
