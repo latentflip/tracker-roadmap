@@ -2,8 +2,8 @@ class MainController < ApplicationController
   before_filter :authenticate
   
   def index
-    PivotalTracker::Client.token = ENV['TRACKER_API_KEY']
-    @project = PivotalTracker::Project.find(ENV['TRACKER_PROJECT_ID'].to_i)
+    PivotalTracker::Client.token = ENV["TRACKER_API_KEY"]
+    @project = PivotalTracker::Project.find(ENV["TRACKER_PROJECT_ID"].to_i)
     @releases = []
     @iterations = [PivotalTracker::Iteration.current(@project)] + PivotalTracker::Iteration.backlog(@project)
     @iterations.each do |iteration|
@@ -21,7 +21,7 @@ protected
 
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      username == "samastaff" && password == ENV['PASSWORD']
+      username == ENV["USERNAME"] && password == ENV["PASSWORD"]
     end
   end
 end
