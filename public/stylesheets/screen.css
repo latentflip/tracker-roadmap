@@ -19,17 +19,37 @@ body {
   border-bottom: 3px solid #666666;
 }
 
-/* line 22, sass/screen.sass */
+/* line 21, sass/screen.sass */
+#options {
+  float: right;
+  color: #333333;
+  font-weight: bold;
+}
+/* line 25, sass/screen.sass */
+#options span {
+  border-bottom: 2px solid #666666;
+}
+/* line 27, sass/screen.sass */
+#options a {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 30, sass/screen.sass */
+#options a:hover {
+  color: black;
+}
+
+/* line 35, sass/screen.sass */
 #content h1 {
   margin-bottom: 0px;
 }
-/* line 24, sass/screen.sass */
+/* line 37, sass/screen.sass */
 #content h2 {
   color: #cccccc;
   margin-top: 0px;
 }
 
-/* line 28, sass/screen.sass */
+/* line 41, sass/screen.sass */
 #footer {
   margin-top: 40px;
   color: #aaaaaa;

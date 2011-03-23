@@ -5,7 +5,7 @@ class MainController < ApplicationController
     PivotalTracker::Client.token = ENV["TRACKER_API_KEY"]
     @project = PivotalTracker::Project.find(ENV["TRACKER_PROJECT_ID"].to_i)
     @releases = []
-    @iterations = [PivotalTracker::Iteration.current(@project)] + PivotalTracker::Iteration.backlog(@project)
+    @iterations = params[:all] ? @project.iterations.all : [PivotalTracker::Iteration.current(@project)] + PivotalTracker::Iteration.backlog(@project)
     @iterations.each do |iteration|
       iteration.stories.each do |story|
         if story.story_type == "release"

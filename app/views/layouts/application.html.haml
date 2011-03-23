@@ -11,6 +11,13 @@
       = stylesheet_link_tag "ie.css", :media => "screen, projection"
   %body
     #header
+      #options
+        - if params[:all]
+          = link_to "Upcoming", :all => nil
+          %span All
+        - else
+          %span Upcoming
+          = link_to "All", :all => "true"
       %h1= "#{ENV["PRODUCT_NAME"] || "Product"} Roadmap"
     #content
       = yield
