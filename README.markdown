@@ -23,4 +23,4 @@ After cloning this repository, you can deploy with this:
 
 ## We're hiring!
 
-We're hiring designers and engineers!  Read our job descriptions here:  http://www.samasource.org/about/samacareers
+[We're hiring designers and engineers.  Join us and use your code and design skills to alleviate poverty.](http://www.samasource.org/about/samacareers)
