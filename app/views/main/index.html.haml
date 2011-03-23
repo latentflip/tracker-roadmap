@@ -1,0 +1,4 @@
+- @releases.each do |release|
+  %h1= release.name
+  %h2= "Due #{release.deadline.to_s(:default)} &mdash; Estimated #{release.estimated_finish}".html_safe
+  = RedCloth.new(release.description).to_html.html_safe
