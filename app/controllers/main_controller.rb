@@ -3,6 +3,7 @@ class MainController < ApplicationController
   
   def index
     PivotalTracker::Client.token = ENV["TRACKER_API_KEY"]
+    PivotalTracker::Client.use_ssl = true
     @project = PivotalTracker::Project.find(ENV["TRACKER_PROJECT_ID"].to_i)
     @releases = []
     @iterations = params[:all] ? @project.iterations.all : [PivotalTracker::Iteration.current(@project)] + PivotalTracker::Iteration.backlog(@project)
